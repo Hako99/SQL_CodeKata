@@ -1,3 +1,4 @@
+/*
 create table USER_INFO
 (
     USER_ID number not null,
@@ -5,6 +6,8 @@ create table USER_INFO
     age     number null,
     joined  date not null
 );
+*/
+
 
 insert into USER_INFO (user_id, gender, age, joined)
 values (1, 1, 25, '2021-06-03');
@@ -407,5 +410,3 @@ values (199, 0, 28, '2022-03-03');
 insert into USER_INFO (user_id, gender, age, joined)
 values (200, 0, 21, '2022-03-03');
 
-select *
-from USER_INFO

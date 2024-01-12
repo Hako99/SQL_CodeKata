@@ -1,3 +1,4 @@
+/*
 create table FOOD_FACTORY
 (
     FACTORY_ID   char(30)  not null,
@@ -5,6 +6,7 @@ create table FOOD_FACTORY
     ADDRESS      char(300) not null,
     TLNO         char(20)  not null
 );
+*/
 
 insert into FOOD_FACTORY (FACTORY_ID, FACTORY_NAME, ADDRESS, TLNO)
 values ('FT19980001', '(주)맛있는라면', '경기도 동두천시 강변로850번길 120', '031-231-1032');

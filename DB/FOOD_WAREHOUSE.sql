@@ -1,4 +1,6 @@
+/*
 create table FOOD_WAREHOUSE
+
 (
     WAREHOUSE_ID   char(20)  not null,
     WAREHOUSE_NAME char(20)  not null,
@@ -6,7 +8,7 @@ create table FOOD_WAREHOUSE
     TLNO           char(20)  not null,
     FREEZER_YN     char(10)  null
 );
-
+*/
 insert into FOOD_WAREHOUSE (WAREHOUSE_ID, WAREHOUSE_NAME, ADDRESS, TLNO, FREEZER_YN)
 values ('WH0001', '창고_경기1', '경기도 안산시 상록구 용담로 141', '031-152-1332', 'Y');
 insert into FOOD_WAREHOUSE (WAREHOUSE_ID, WAREHOUSE_NAME, ADDRESS, TLNO, FREEZER_YN)
