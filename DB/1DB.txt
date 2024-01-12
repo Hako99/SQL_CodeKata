@@ -1,0 +1,52 @@
+ANIMAL_OUTS
+    ANIMAL_ID        동물 이름
+    ANIMAL_TYPE      동물 타입
+    DATETIME         맡긴 시간
+    NAME             이름
+    SEX_UPON_OUTCOME 중성화 여부
+
+
+DOCTOR
+    DR_NAME  이름
+    DR_ID    의사 ID
+    LCNS_NO
+    HIRE_YMD 고용일
+    MCDP_CD  소속 코드
+    TLNO     연락처
+
+
+
+FOOD_FACTORY
+    FACTORY_ID   공장 ID
+    FACTORY_NAME 공장 이름
+    ADDRESS      공장 주소
+    TLNO         공장 연락처
+
+
+FOOD_PRODUCT
+    product_id      상품 ID
+    product_name    상품명
+    product_cd      상품 코드
+    category        상품 종류
+    price           가격
+
+
+FOOD_WAREHOUSE
+    WAREHOUSE_ID    창고 ID
+    WAREHOUSE_NAME  창고 이름
+    ADDRESS         창고 주소
+    TLNO            창고 연락처
+    FREEZER_YN      냉동고 유무 여부
+
+
+PRODUCT
+    product_id   ID
+    product_code 코드
+    price        가격
+
+
+USER_INFO
+    USER_ID     유저 ID
+    GENDER      성별 (0 남자 , 1 여자)
+    age         나이
+    joined      가입일
