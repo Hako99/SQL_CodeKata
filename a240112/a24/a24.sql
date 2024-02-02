@@ -7,7 +7,8 @@
 -- SELECT left(product_code,2) as category ,count (product_code) as products
 SELECT substr(product_code,0,2) as category ,count (product_code) as products
 from product
-group by substr(product_code,0,2);
+group by substr(product_code,0,2)
+ORDER BY substr(product_code,0,2) ASC
 -- group by category
 
 -- 주석 처리는 mysql 에서

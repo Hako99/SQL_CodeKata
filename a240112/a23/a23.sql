@@ -7,6 +7,12 @@
 
 -- https://school.programmers.co.kr/learn/courses/30/lessons/59409
 
-SELECT animal_id,name,case when sex_upon_intake like '%neutered%' or sex_upon_intake like '%spayed%' then 'O' else 'X' end as "중성화"
-from animal_ins
-order by animal_id asc
+SELECT ANIMAL_ID, NAME,
+       CASE WHEN SEX_UPON_INTAKE LIKE '%Neutered%' THEN 'O'
+            WHEN  SEX_UPON_INTAKE LIKE '%Spayed%' THEN 'O'
+            ELSE 'X' END AS "중성화"
+            -- SEX_UPON_INTAKE 값에 NEUTERED 가 들어가거나
+            -- SPAYED 가 들어가면
+            -- 'O' 안들어가면 'X' 를 출력하는 "중성화" 라는 컬럼을 출력함
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID ASC
