@@ -1,11 +1,11 @@
-/*
+
 create table PRODUCT
 (
     product_id   number   not null,
     product_code char(20) not null,
-    price        number   not null
+    price        INTEGER   not null
 );
-*/
+
 
 insert into PRODUCT (product_id, product_code, price)
 values (1, 'C2000000', 72000);
