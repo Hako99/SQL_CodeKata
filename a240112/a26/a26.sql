@@ -7,11 +7,11 @@
 
 
 
-SELECT extract(hour from datetime) hour , count(datetime) as count
-from animal_outs
-group by extract(hour from datetime)
-having extract(hour from datetime)>= 9 and extract(hour from datetime) <= 19
-order by hour asc
+SELECT TO_CHAR(DATETIME, 'FMHH24') AS HOUR, COUNT(DATETIME) AS COUNT
+FROM ANIMAL_OUTS
+WHERE TO_CHAR(DATETIME, 'FMHH24') >= 9 AND TO_CHAR(DATETIME, 'FMHH24') <= 19
+group by TO_CHAR(DATETIME, 'FMHH24')
+ORDER BY TO_NUMBER(TO_CHAR(DATETIME, 'FMHH24')) ASC
 
 /*
  SELECT hour(datetime) hour , count(datetime) as count
@@ -20,3 +20,11 @@ group by hour(datetime)
 having hour >= 9 and hour <= 19
 order by hour asc
  */
+
+ /*SELECT TO_CHAR(DATETIME, 'FMHH24') AS HOUR, COUNT(DATETIME) AS COUNT
+FROM ANIMAL_OUTS
+WHERE TO_CHAR(DATETIME, 'FMHH24') >= 9 AND TO_CHAR(DATETIME, 'FMHH24') <= 19
+group by TO_CHAR(DATETIME, 'FMHH24')
+ORDER BY TO_CHAR(DATETIME, 'FMHH24') ASC
+   해당 방법은 숫자가 9부터 나오지만 정렬이 이상해짐
+  */
