@@ -1,5 +1,5 @@
 
-
+/*
 CREATE TABLE BOOK
 (
     book_id         number      NOT NULL ,
@@ -9,7 +9,7 @@ CREATE TABLE BOOK
     published_date  TIMESTAMP   NOT NULL
 );
 
-
+*/
 
 INSERT INTO BOOK(book_id, category, author_id, price, published_date)
 VALUES ('1', '경제', '1', '9000', '2020-01-10 0:00:00');
