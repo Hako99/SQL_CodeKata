@@ -1,11 +1,11 @@
-
+/*
 create table FIRST_HALF
 (
     shipment_id    number       not null,
     flavor         char(50)     not null,
     total_order    number       not null
 );
-
+*/
 
 insert into first_half(shipment_id, flavor, total_order)
 values ('101', 'chocolate', '3200');
