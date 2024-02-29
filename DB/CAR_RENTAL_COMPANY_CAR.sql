@@ -1,5 +1,5 @@
 
-
+/*
 create table CAR_RENTAL_COMPANY_CAR
 (
     car_id      number   not null,
@@ -8,7 +8,7 @@ create table CAR_RENTAL_COMPANY_CAR
     options     char(500) not null
 );
 
-
+*/
 
 
 insert into CAR_RENTAL_COMPANY_CAR(car_id, car_type, daily_fee, options)
